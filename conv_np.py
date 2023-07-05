@@ -26,3 +26,12 @@ print(ker)
 convo_out = convo2d(image_array, ker)
 plt.imshow(convo_out,cmap="gray")
 plt.show()
+
+ker = np.zeros((3, 3), dtype=float)
+ker[0,:] = -1.0
+ker[2,:] = 1.0
+print(ker)
+
+convo_out = convo2d(image_array, ker)
+plt.imshow(convo_out,cmap="gray")
+plt.show()
