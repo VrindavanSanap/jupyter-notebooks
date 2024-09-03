@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-image = plt.imread("./building.jpg")
+image = plt.imread("./images/building.jpg")
 image_array = np.array(image, dtype=float)
 plt.imshow(image_array, cmap="gray")
 plt.show()
